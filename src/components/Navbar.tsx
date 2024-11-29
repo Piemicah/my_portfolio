@@ -47,14 +47,14 @@ const Navbar = () => {
         }}
       />
       {opened && (
-        <div className="absolute left-0 z-10 flex flex-col items-center w-screen gap-8 pt-8 text-center bg-[rgb(30,30,30)] top-12 md:hidden">
+        <div className="absolute left-0 z-10 flex flex-col items-center w-screen gap-0 pt-8 text-center bg-[rgb(30,30,30)] top-12 md:hidden">
           {links.map((link) => (
             <Link
               to={link.target}
               onClick={() => {
                 setOpened(false);
               }}
-              className=" w-[100%] cursor-pointer"
+              className=" w-[100%] cursor-pointer border-b border-b-wity py-4"
             >
               {link.title}
             </Link>
