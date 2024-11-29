@@ -16,10 +16,10 @@ const Carousel = () => {
   };
 
   const handleTouchEnd = () => {
-    if (touchEnd - touchStart > 50) {
+    if (touchEnd - touchStart > 75) {
       handleLeft(currentSlide);
     }
-    if (touchStart - touchEnd > 50) handleRight(currentSlide);
+    if (touchStart - touchEnd > 75) handleRight(currentSlide);
   };
 
   const handleLeft = (currentIndex: number) => {
