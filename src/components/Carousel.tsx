@@ -42,7 +42,7 @@ const Carousel = () => {
     <div className="flex flex-col items-center gap-2 ">
       <div className="flex items-center justify-center gap-2">
         <div
-          className="p-1 bg-black rounded-md cursor-pointer"
+          className="p-1 bg-black rounded-md cursor-pointer active:bg-slate-400"
           onClick={() => handleLeft(currentSlide)}
         >
           <div className="left-arrow h-[20px] w-[10px] md:h-[30px] md:w-[15px]"></div>
@@ -62,7 +62,7 @@ const Carousel = () => {
         </div>
 
         <div
-          className="p-1 bg-black rounded-md cursor-pointer"
+          className="p-1 bg-black rounded-md cursor-pointer active:bg-slate-400"
           onClick={() => {
             handleRight(currentSlide);
           }}
