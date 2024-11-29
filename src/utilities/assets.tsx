@@ -92,7 +92,7 @@ export const pics = [
   },
   {
     img: watch,
-    title: "Watch by Curren",
+    title: "Curren Watch",
     model: "Autodesk 3DS Max",
     renderer: "Corona",
   },
@@ -116,7 +116,7 @@ export const pics = [
   },
   {
     img: watch2,
-    title: "Watch by YC",
+    title: "YC Watch",
     model: "Autodesk 3DS Max",
     renderer: "V-ray",
   },
@@ -134,7 +134,7 @@ export const pics = [
   },
   {
     img: bulb,
-    title: "Power-saving Bulb",
+    title: "Energy-saving Bulb",
     model: "Houdini",
     renderer: "V-Ray",
   },
