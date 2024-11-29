@@ -48,7 +48,7 @@ const Home = () => {
               <span className="text-[20px]">Hi, I am</span>
               <span className="text-[35px]">Segun Adeyemi</span>
               <span className="text-[12px] font-extrabold">
-                Front-end Developer/3D Artist
+                Software Developer/3D Artist
               </span>
             </div>
             <div className="flex flex-col gap-8 mb-8">

@@ -5,10 +5,10 @@ import menuclose from "../assets/close.png";
 import logo from "../assets/logoWhite.png";
 
 const links = [
-  { target: "home", title: "Home" },
-  { target: "about", title: "About Me" },
-  { target: "skills", title: "Skills" },
-  { target: "portfolio", title: "Portfolio" },
+  { target: "home", title: "Home", offset: -50 },
+  { target: "about", title: "About Me", offset: 0 },
+  { target: "skills", title: "Skills", offset: 0 },
+  { target: "portfolio", title: "Portfolio", offset: 0 },
 ];
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="relative top-0 left-0 z-50 flex items-center justify-between px-6 py-2 md:justify-end md:sticky bg-mainblack">
       <img src={logo} alt="" className="md:hidden w-[32px] h-[32px]" />
       <div className="items-center justify-between hidden w-[45%] font-bold md:flex font-mont md:text-[13px] xl:text-[17px]">
-        <Link to="home" className="cursor-pointer">
+        <Link to="home" offset={-50} className="cursor-pointer">
           Home
         </Link>
         <Link to="about" offset={-50} className="cursor-pointer">
@@ -51,6 +51,7 @@ const Navbar = () => {
           {links.map((link) => (
             <Link
               to={link.target}
+              offset={link.offset}
               onClick={() => {
                 setOpened(false);
               }}

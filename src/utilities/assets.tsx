@@ -14,6 +14,9 @@ import s7 from "../assets/S7.jpg";
 import iphone7 from "../assets/iphone7.jpg";
 import kettle from "../assets/kettle.jpg";
 import guiter from "../assets/guiter.jpg";
+import can from "../assets/canBlack.jpg";
+import watch2 from "../assets/watch2.jpg";
+import biro from "../assets/biro.jpg";
 
 import separator from "../assets/separatorBlack.png";
 import c4d from "../assets/c4d.png";
@@ -58,10 +61,22 @@ export const pics = [
     renderer: "Keyshot",
   },
   {
+    img: biro,
+    title: "Pen Opened",
+    model: "Autodesk Maya",
+    renderer: "Keyshot",
+  },
+  {
     img: chair,
     title: "Wooden Chair",
     model: "Autodesk 3DS Max",
     renderer: "Corona",
+  },
+  {
+    img: can,
+    title: "Can Drink Splashed",
+    model: "Autodesk Maya",
+    renderer: "Maxwell",
   },
   {
     img: iphone7,
@@ -77,7 +92,7 @@ export const pics = [
   },
   {
     img: watch,
-    title: "Watch",
+    title: "Watch by Curren",
     model: "Autodesk 3DS Max",
     renderer: "Corona",
   },
@@ -98,6 +113,12 @@ export const pics = [
     title: "Old gas cylinder",
     model: "Autodesk Maya",
     renderer: "Substance Painter",
+  },
+  {
+    img: watch2,
+    title: "Watch by YC",
+    model: "Autodesk 3DS Max",
+    renderer: "V-ray",
   },
   {
     img: atupa,

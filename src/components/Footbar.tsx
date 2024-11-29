@@ -12,6 +12,7 @@ const Footbar = () => {
     <div className="flex flex-col items-center gap-8 py-16">
       <Link
         to="home"
+        offset={-50}
         className="flex flex-col items-center font-mont font-bold text-[15px] cursor-pointer"
       >
         <img src={upArrow} alt="" className="w-4" />
