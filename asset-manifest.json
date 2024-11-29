@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.2a3eb074.css",
-    "main.js": "/my_portfolio/static/js/main.8f5ef288.js",
+    "main.js": "/my_portfolio/static/js/main.fa9cdff1.js",
     "static/media/splashBrown.jpg": "/my_portfolio/static/media/splashBrown.64ca110983e8b3697992.jpg",
     "static/media/bgImage.png": "/my_portfolio/static/media/bgImage.07ccd0d505ec92da9264.png",
     "static/media/benz.jpg": "/my_portfolio/static/media/benz.ee1deef35ee4a4055ee4.jpg",
     "static/media/python-logo.png": "/my_portfolio/static/media/python-logo.dea924d737bb84eb9ce3.png",
     "static/media/Matlab_Logo.png": "/my_portfolio/static/media/Matlab_Logo.7d0ce9c0ba3cf7c1f52b.png",
     "static/media/gas2.jpg": "/my_portfolio/static/media/gas2.422fcaf8704feffd6b34.jpg",
-    "static/media/watch.jpg": "/my_portfolio/static/media/watch.3c797012259abc018010.jpg",
+    "static/media/canBlack.jpg": "/my_portfolio/static/media/canBlack.7c3de69dbd49fe9b8723.jpg",
+    "static/media/watch2.jpg": "/my_portfolio/static/media/watch2.49b53a97afdcf09f00a9.jpg",
+    "static/media/watch.jpg": "/my_portfolio/static/media/watch.cb0a6b1c23bd5d3b22ed.jpg",
     "static/media/engine.jpg": "/my_portfolio/static/media/engine.0ac5992b4fcd89f56883.jpg",
     "static/media/flask.jpg": "/my_portfolio/static/media/flask.41b676987a4c10fa210b.jpg",
     "static/media/lamp.jpg": "/my_portfolio/static/media/lamp.4eb2db8c96f7a4e14b87.jpg",
@@ -27,6 +29,7 @@
     "static/media/S7.jpg": "/my_portfolio/static/media/S7.c67b4eede3209f903158.jpg",
     "static/media/Django-Logo.png": "/my_portfolio/static/media/Django-Logo.b47845d0ec1bdea99ef6.png",
     "static/media/corona.jpg": "/my_portfolio/static/media/corona.c7bd8c0debf399caff8f.jpg",
+    "static/media/biro.jpg": "/my_portfolio/static/media/biro.97814806c361a0c6eeb6.jpg",
     "static/media/Blue-Background2.jpg": "/my_portfolio/static/media/Blue-Background2.eabf8359f29be917685b.jpg",
     "static/media/Houdini3D_icon.png": "/my_portfolio/static/media/Houdini3D_icon.570c546f85d03c0d6491.png",
     "static/media/piemicahBlack.png": "/my_portfolio/static/media/piemicahBlack.51f1cf84a6a64ce1a50a.png",
@@ -37,10 +40,10 @@
     "static/media/autodesk-maya-icon2.webp": "/my_portfolio/static/media/autodesk-maya-icon2.0e7dd46b0f44a6a68802.webp",
     "index.html": "/my_portfolio/index.html",
     "main.2a3eb074.css.map": "/my_portfolio/static/css/main.2a3eb074.css.map",
-    "main.8f5ef288.js.map": "/my_portfolio/static/js/main.8f5ef288.js.map"
+    "main.fa9cdff1.js.map": "/my_portfolio/static/js/main.fa9cdff1.js.map"
   },
   "entrypoints": [
     "static/css/main.2a3eb074.css",
-    "static/js/main.8f5ef288.js"
+    "static/js/main.fa9cdff1.js"
   ]
 }
