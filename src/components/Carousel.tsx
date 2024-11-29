@@ -1,9 +1,26 @@
 import Image from "./Image";
-import { useState } from "react";
+import { TouchEvent, useState } from "react";
 import { pics } from "../utilities/assets";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e: TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: TouchEvent) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchEnd - touchStart > 50) {
+      handleLeft(currentSlide);
+    }
+    if (touchStart - touchEnd > 50) handleRight(currentSlide);
+  };
 
   const handleLeft = (currentIndex: number) => {
     const prevIndex = currentIndex - 1;
@@ -30,7 +47,12 @@ const Carousel = () => {
         >
           <div className="left-arrow h-[20px] w-[10px] md:h-[30px] md:w-[15px]"></div>
         </div>
-        <div className="h-[260px] w-[82vw] md:h-[460px] md:w-[560px] flex justify-center items-center">
+        <div
+          className="h-[260px] w-[82vw] md:h-[460px] md:w-[560px] flex justify-center items-center"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          onTouchMove={handleTouchMove}
+        >
           <Image
             img={pics[currentSlide].img}
             title={pics[currentSlide].title}
