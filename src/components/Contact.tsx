@@ -15,9 +15,16 @@ const Contact = () => {
     emailjs.send("service_bf9vrvd", "template_i933303", {
       title: `Message from ${info.oruko}`,
       name: info.oruko,
-      message: `${info.message}\n ${info.phone}`,
+      message: `${info.message}\n mobile: ${info.phone}`,
       email_from: info.oruko,
       email: info.email,
+    });
+    alert("Message sent successfully!");
+    setInfo({
+      oruko: "",
+      email: "",
+      phone: "",
+      message: "",
     });
   };
 
