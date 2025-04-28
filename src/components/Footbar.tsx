@@ -2,10 +2,18 @@ import upArrow from "../assets/ic_baseline-double-arrow.png";
 import fb from "../assets/fb.png";
 import lin from "../assets/in.png";
 import inst from "../assets/instagram.png";
-import envelope from "../assets/envelope.png";
+import tweeter from "../assets/tweeter_white.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const icons = [fb, lin, inst, envelope];
+const icons = [
+  { icon: fb, url: "https://web.facebook.com/profile.php?id=61555352982951" },
+  {
+    icon: lin,
+    url: "https://www.linkedin.com/in/oluwasegun-adeyemi-72a425362/",
+  },
+  { icon: inst, url: "https://www.instagram.com/nugespie/" },
+  { icon: tweeter, url: "https://x.com/Piemicah222" },
+];
 
 const Footbar = () => {
   return (
@@ -20,7 +28,14 @@ const Footbar = () => {
       </Link>
       <div className="flex gap-8">
         {icons.map((icon) => (
-          <img src={icon} alt="" className="w-6 h-6" />
+          <img
+            src={icon.icon}
+            alt=""
+            className="w-6 h-6 cursor-pointer"
+            onClick={() => {
+              window.open(icon.url);
+            }}
+          />
         ))}
       </div>
       <p>&#169; 2024 Adeyemi Oluwasegun. All rights reserved</p>

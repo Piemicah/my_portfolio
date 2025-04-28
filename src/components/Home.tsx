@@ -1,10 +1,10 @@
 import bgImage from "../assets/bgImage.png";
 import logo from "../assets/piemicahBlack.png";
-import github from "../assets/github.png";
+import fb from "../assets/fb_black.png";
 import linkedin from "../assets/linkedin.png";
-import email from "../assets/email.png";
-import emailWhite from "../assets/emailWhite.png";
-import githubWhite from "../assets/githubWite.png";
+import tweeter from "../assets/tweeter_black.png";
+import tweeterwhite from "../assets/tweeter_white.png";
+import fbwhite from "../assets/fb.png";
 import linkedinWhite from "../assets/linkedWhite.png";
 
 const Home = () => {
@@ -24,18 +24,33 @@ const Home = () => {
           </div>
 
           <div className="flex gap-8">
-            <div className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer">
-              <img src={email} alt="" className="p-2" />
-            </div>
             <div
-              className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer"
+              className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer h-[50px]"
               onClick={() => {
-                window.open("https://github.com/piemicah", "_blank");
+                window.open("https://x.com/Piemicah222", "_blank");
               }}
             >
-              <img src={github} alt="" className="p-2" />
+              <img src={tweeter} alt="" className="p-2 h-[50px]" />
             </div>
-            <div className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer">
+            <div
+              className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer h-[50px]"
+              onClick={() => {
+                window.open(
+                  "https://web.facebook.com/profile.php?id=61555352982951",
+                  "_blank"
+                );
+              }}
+            >
+              <img src={fb} alt="" className="p-2 h-[50px]" />
+            </div>
+            <div
+              className="bg-[#c4c4c4] shadow-sm shadow-black cursor-pointer h-[50px]"
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/oluwasegun-adeyemi-72a425362/"
+                );
+              }}
+            >
               <img src={linkedin} alt="" className="p-2" />
             </div>
           </div>
@@ -52,16 +67,35 @@ const Home = () => {
               </span>
             </div>
             <div className="flex flex-col gap-8 mb-8">
-              <img src={emailWhite} alt="" className="cursor-pointer" />
               <img
-                src={githubWhite}
+                src={tweeterwhite}
+                alt=""
+                className="cursor-pointer h-[30px]"
+                onClick={() => {
+                  window.open("https://x.com/Piemicah222");
+                }}
+              />
+              <img
+                src={fbwhite}
+                alt=""
+                className="cursor-pointer h-[30px]"
+                onClick={() => {
+                  window.open(
+                    "https://web.facebook.com/profile.php?id=61555352982951",
+                    "_blank"
+                  );
+                }}
+              />
+              <img
+                src={linkedinWhite}
                 alt=""
                 className="cursor-pointer"
                 onClick={() => {
-                  window.open("https://github.com/piemicah", "_blank");
+                  window.open(
+                    "https://www.linkedin.com/in/oluwasegun-adeyemi-72a425362/"
+                  );
                 }}
               />
-              <img src={linkedinWhite} alt="" className="cursor-pointer" />
             </div>
           </div>
         </div>
