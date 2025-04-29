@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import emailjs from "@emailjs/browser";
 import Dialog from "./Dialog";
+import { error } from "console";
 
 const Contact = () => {
   const [info, setInfo] = useState({
@@ -24,20 +25,26 @@ const Contact = () => {
     }
 
     emailjs.init({ publicKey: "-rBRte5_kjLnvxObb" });
-    emailjs.send("service_bf9vrvd", "template_i933303", {
-      title: `Message from ${info.oruko}`,
-      name: info.oruko,
-      message: `${info.message}\n mobile: ${info.phone}`,
-      email_from: info.oruko,
-      email: info.email,
-    });
-    setMessage("Message sent successfully!");
-    setInfo({
-      oruko: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
+    emailjs
+      .send("service_bf9vrvd", "template_i933303", {
+        title: `Message from ${info.oruko}`,
+        name: info.oruko,
+        message: `${info.message}\n mobile: ${info.phone}`,
+        email_from: info.oruko,
+        email: info.email,
+      })
+      .then((result) => {
+        setMessage("Message sent successfully!");
+        setInfo({
+          oruko: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        setMessage("Network Error");
+      });
   };
 
   const infoHandler = (e: any) => {
