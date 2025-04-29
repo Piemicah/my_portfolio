@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import emailjs from "@emailjs/browser";
+import Dialog from "./Dialog";
 
 const Contact = () => {
   const [info, setInfo] = useState({
@@ -9,8 +10,19 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [message, setMessage] = useState<string | null>(null);
 
   const sendEmail = () => {
+    if (
+      info.email === "" ||
+      info.message === "" ||
+      info.oruko === "" ||
+      info.phone === ""
+    ) {
+      setMessage("All fields must be filled");
+      return;
+    }
+
     emailjs.init({ publicKey: "-rBRte5_kjLnvxObb" });
     emailjs.send("service_bf9vrvd", "template_i933303", {
       title: `Message from ${info.oruko}`,
@@ -19,7 +31,7 @@ const Contact = () => {
       email_from: info.oruko,
       email: info.email,
     });
-    alert("Message sent successfully!");
+    setMessage("Message sent successfully!");
     setInfo({
       oruko: "",
       email: "",
@@ -33,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="text-black bg-white font-mont">
+    <div id="contact" className="relative text-black bg-white font-mont">
       <div className="flex flex-col items-center gap-24 pt-12 bg-gradbg ">
         <Header title="CONTACT" />
 
@@ -80,6 +92,16 @@ const Contact = () => {
           </button>
         </div>
       </div>
+
+      {message && (
+        <Dialog
+          message={message}
+          fxn={() => {
+            setMessage(null);
+            return;
+          }}
+        />
+      )}
     </div>
   );
 };

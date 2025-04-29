@@ -38,7 +38,10 @@ const Footbar = () => {
           />
         ))}
       </div>
-      <p>&#169; 2024 Adeyemi Oluwasegun. All rights reserved</p>
+      <p>
+        &#169; {new Date().getFullYear()} Adeyemi Oluwasegun. All rights
+        reserved
+      </p>
     </div>
   );
 };
