@@ -83,6 +83,8 @@ const About = () => {
             <Icon img={icons.saas} label="SAAS" />
             <Icon img={icons.mysq} label="MYSQL" />
             <Icon img={icons.djangoIcon} label="DJANGO" />
+            <Icon img={icons.dotnet} label="DOTNET" />
+            <Icon img={icons.spring} label="SPRING BOOT" />
           </div>
         </div>
 

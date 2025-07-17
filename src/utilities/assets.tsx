@@ -46,6 +46,8 @@ import qt from "../assets/qt.png";
 import corona from "../assets/corona.jpg";
 import maya from "../assets/autodesk-maya-icon2.webp";
 import houdini from "../assets/Houdini3D_icon.png";
+import dotnet from "../assets/dotnet.png";
+import spring from "../assets/spring-boot.svg";
 
 export const pics = [
   {
@@ -193,4 +195,6 @@ export const icons = {
   corona,
   maya,
   houdini,
+  dotnet,
+  spring,
 };
