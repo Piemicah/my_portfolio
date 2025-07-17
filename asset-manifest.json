@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.c73bd7b3.css",
-    "main.js": "/my_portfolio/static/js/main.089d0e12.js",
+    "main.js": "/my_portfolio/static/js/main.7814687b.js",
     "static/media/splashBrown.jpg": "/my_portfolio/static/media/splashBrown.64ca110983e8b3697992.jpg",
     "static/media/bgImage.png": "/my_portfolio/static/media/bgImage.07ccd0d505ec92da9264.png",
     "static/media/benz.jpg": "/my_portfolio/static/media/benz.ee1deef35ee4a4055ee4.jpg",
@@ -39,11 +39,12 @@
     "static/media/3ds.png": "/my_portfolio/static/media/3ds.c1c4c6607ce0f54a47bb.png",
     "static/media/autodesk-maya-icon2.webp": "/my_portfolio/static/media/autodesk-maya-icon2.0e7dd46b0f44a6a68802.webp",
     "index.html": "/my_portfolio/index.html",
+    "static/media/spring-boot.svg": "/my_portfolio/static/media/spring-boot.f4df5f34204e49d62bb1d53821f36399.svg",
     "main.c73bd7b3.css.map": "/my_portfolio/static/css/main.c73bd7b3.css.map",
-    "main.089d0e12.js.map": "/my_portfolio/static/js/main.089d0e12.js.map"
+    "main.7814687b.js.map": "/my_portfolio/static/js/main.7814687b.js.map"
   },
   "entrypoints": [
     "static/css/main.c73bd7b3.css",
-    "static/js/main.089d0e12.js"
+    "static/js/main.7814687b.js"
   ]
 }
